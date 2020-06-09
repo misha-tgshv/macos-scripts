@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Mikhail Tugushev <info@mihailtugushev.ru>
-# Documentation VK.com API <https://vk.com/dev/utils.getShortLink>
+# VK API documentation <https://vk.com/dev/utils.getShortLink>
 
 # On OSX, this will dump the contents of the clipboard
 longUrl=`pbpaste`
