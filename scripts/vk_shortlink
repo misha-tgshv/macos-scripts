@@ -19,6 +19,6 @@ printf "$shortUrl" | pbcopy
 echo "$shortUrl"
 
 # Send notification
-echo display notification \""$shortUrl"\" | osascript
+echo display notification "\"$shortUrl"\" | osascript
 
 
