@@ -1,19 +1,24 @@
 #!/bin/bash
 
-# Mikhail Tugushev <http://www.mihailtugushev.ru>
+# Author: Mikhail Tugushev <info@mihailtugushev.ru>
 # Documentation VK.com API <https://vk.com/dev/utils.getShortLink>
 
 # Copied contents buffer exchange
-URL=`pbpaste`
+longUrl=`pbpaste`
+
+# Params
+token=ccc39829ccc39829ccc3982961ccb320e1cccc3ccc3982992464282e11588d3cb690fgh # Service key access
+version=5.21 # Version
+private=0 # Public stat
 
 # Create short link via api vk.com
-shorturl=$(curl -s --data "access_token={token}&v=5.63" "https://api.vk.com/method/utils.getShortLink?url=$URL"  | /usr/local/bin/jq -r -j '.response.short_url')
+shortUrl=$(curl -s --data "access_token=$token&v=$version&private=$private" "https://api.vk.com/method/utils.getShortLink?url=$longUrl" | /usr/local/bin/jq -r -j '.response.short_url')
 
 # Copy short link in buffer exchange
-echo "$shorturl" | pbcopy
-echo "$shorturl"
+echo "$shortUrl" | pbcopy
+echo "$shortUrl"
 
 # Send notification
-echo display notification \" "$shorturl"\" | osascript
+echo display notification \" "$shortUrl"\" | osascript
 
 
