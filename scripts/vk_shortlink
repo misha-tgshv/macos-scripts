@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Mikhail Tugushev <http://www.mihailtugushev.ru>
-# Documentation VK.com API
-https://vk.com/dev/utils.getShortLink 
+# Documentation VK.com API <https://vk.com/dev/utils.getShortLink>
 
 # Copied contents buffer exchange
 URL=`pbpaste`
