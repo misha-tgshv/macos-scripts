@@ -1,2 +1,2 @@
-# macos-scripts.github.io-
+# macos-scripts
 My collection of bash scripts (for macOS)
