@@ -11,7 +11,7 @@ token=ccc39829ccc39829ccc3982961ccb320e1cccc3ccc3982992464282e11588d3cb690fgh # 
 version=5.21 # Version
 private=0 # Public stat
 
-# Create short link via api vk.com
+# Create short url via VK API
 shortUrl=$(curl --data "access_token=$token&v=$version&private=$private" "https://api.vk.com/method/utils.getShortLink?url=$longUrl" | /usr/local/bin/jq -r '.response.short_url')
 
 # Copy short link in buffer exchange
