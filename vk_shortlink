@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Copied contents buffer exchange
+URL=`pbpaste`
+
+# Create short link via api vk.com
+shorturl=$(curl -s --data "access_token={token}&v=5.63" "https://api.vk.com/method/utils.getShortLink?url=$URL"  | /usr/local/bin/jq -r -j '.response.short_url')
+
+# Copy short link in buffer exchange
+echo "$shorturl" | pbcopy
+echo "$shorturl"
+
+# Send notification
+echo display notification \" "$shorturl"\" | osascript
+
+# Documentation 
+https://vk.com/dev/utils.getShortLink 
