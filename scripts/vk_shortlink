@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Mikhail Tugushev <http://www.mihailtugushev.ru>
-#
 # Documentation VK.com API
 https://vk.com/dev/utils.getShortLink 
 
