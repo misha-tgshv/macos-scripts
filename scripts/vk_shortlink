@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Copied contents buffer exchange
 URL=`pbpaste`
