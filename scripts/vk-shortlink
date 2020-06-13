@@ -3,11 +3,8 @@
 # Author: Mikhail Tugushev <info@mihailtugushev.ru>
 # VK API documentation <https://vk.com/dev/utils.getShortLink>
 
-# On OSX, this will dump the contents of the clipboard
-longUrl=`pbpaste`
-
-# Replace HTML Ampersand with %26
-uncodeUrl=$(echo "$longUrl" | sed -e 's/\&/%26/g')
+# On OSX, this will dump the contents of the clipboard; Replace HTML Ampersand with %26
+longUrl=$(pbpaste | sed -e 's/\&/%26/g')
 
 # Set VK Shortlink API
 token=ccc39829ccc39829ccc3982961ccb320e1cccc3ccc3982992464282e11588d3cb690fgh # Service key access
