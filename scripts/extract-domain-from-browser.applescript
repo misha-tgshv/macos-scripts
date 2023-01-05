@@ -23,7 +23,7 @@ end if
 set theURL to do shell script "echo '" & theURL & "' | sed -e 's|^.*://||' | sed -e 's|/.*$||'| sed -e 's|:.*$||' | sed -e 's|^.*@||'" & "| pbcopy; pbpaste"
 
 # Clear domain to mailbox
-set the clipboard to theURL & "@domain.ru" as string
+set the clipboard to theURL & "@mymailbox.ru" as string
 
 
 # https://github.com/nugget/alfred-mailinabox-workflow/blob/ca03d6fa8f662d0560b95ab2d2f6054bc10d2743/get_url.scpt
