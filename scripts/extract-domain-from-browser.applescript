@@ -1,3 +1,6 @@
+# Author: Misha Tugushev <misha@tgshv.ru>
+
+
 set myURL to ""
 
 # Getting current URL on the browser
