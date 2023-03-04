@@ -3,7 +3,7 @@
 
 set myURL to ""
 
-# Getting current URL on the browser
+# Getting current URL on the browser. Delete the browser if it's not on the list
 set nameOfActiveApp to (path to frontmost application as text)
 if "Safari" is in nameOfActiveApp then
 	tell application "Safari"
