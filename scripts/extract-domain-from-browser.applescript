@@ -16,6 +16,12 @@ else if "Yandex" is in nameOfActiveApp then
 	tell application "Yandex"
 		set theURL to the URL of the active tab of the front window
 	end tell
+
+else if "Arc" is in nameOfActiveApp then
+	tell application "Arc"
+		set theURL to the URL of the active tab of the front window
+	end tell
+
 end if
 
 # Extract domain name from url
